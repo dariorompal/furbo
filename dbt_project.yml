@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'furbo_project'
 version: '1.0.0'
 config-version: 2
 
@@ -36,7 +36,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
+  furbo_project:
+    1_staging:
+      +schema: staging
+      +materialized: view  # La capa Raw suele ser vistas para ahorrar espacio
+    2_intermediate:
+      +schema: intermediate
+      +materialized: table # La capa Silver se guarda como tabla para rendimiento
+    3_marts:
+      +schema: marts
+      +materialized: table # La capa Gold siempre tabla para la App
