@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: futbol_pro
+    database: FUTBOL_PRO
+    schema: PUBLIC
+    tables:
+      - name: clasificacion_historica
+      - name: equipos
+      - name: eventos_goles
+      - name: jugadores
+      - name: lesiones
+      - name: partidos
+      - name: vista_racha_equipos
