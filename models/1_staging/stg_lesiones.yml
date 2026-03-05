@@ -1,0 +1,19 @@
+models:
+  - name: stg_lesiones
+    columns:
+      - name: lesion_id
+        tests:
+          - unique
+          - not_null
+      - name: jugador_id
+        tests:
+          - not_null
+      - name: tipo_lesion
+        tests:
+          - not_null
+      - name: fecha_inicio
+        tests:
+          - not_null
+      - name: duracion_dias
+        tests:
+          - not_null

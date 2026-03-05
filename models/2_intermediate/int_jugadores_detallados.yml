@@ -1,0 +1,20 @@
+models:
+- name: int_jugadores_detallados
+  description: This model provides detailed information about players, including their
+    current team, position, and availability status. It integrates data from players,
+    teams, and injuries to offer a comprehensive view of each player's current situation.
+  columns:
+  - name: jugador_id
+    description: A unique identifier for each player.
+  - name: nombre
+    description: The name of the player.
+  - name: posicion
+    description: The position the player holds in the team.
+  - name: equipo_id
+    description: A unique identifier for the team to which the player belongs.
+  - name: ciudad
+    description: The city where the player's team is based.
+  - name: estado_disponibilidad
+    description: Indicates whether the player is available or medically unavailable.
+  - name: lesion_actual
+    description: Describes the current injury of the player, if any.

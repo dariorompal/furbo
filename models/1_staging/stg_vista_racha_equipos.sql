@@ -2,17 +2,15 @@ with
 
 source as (
 
-    select * from {{ source('futbol_pro', 'jugadores') }}
+    select * from {{ source('futbol_pro', 'vista_racha_equipos') }}
 
 ),
 
 renamed as (
 
     select
-        jugador_id,
         nombre,
-        posicion,
-        equipo_id
+        racha
 
     from source
 

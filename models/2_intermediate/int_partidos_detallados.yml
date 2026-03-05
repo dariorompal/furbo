@@ -1,0 +1,21 @@
+models:
+- name: int_partidos_detallados
+  description: This model provides detailed information about football matches, including
+    the teams involved, the date of the match, the goals scored by each team, and
+    the match outcome. It is useful for analyzing match results and team performance.
+  columns:
+  - name: partido_id
+    description: A unique identifier for each match.
+  - name: fecha
+    description: The date on which the match took place.
+  - name: equipo_local
+    description: The name of the home team.
+  - name: equipo_visitante
+    description: The name of the visiting team.
+  - name: goles_local
+    description: The number of goals scored by the home team.
+  - name: goles_visitante
+    description: The number of goals scored by the visiting team.
+  - name: resultado_texto
+    description: The outcome of the match, indicating whether the home team won, the
+      visiting team won, or if it was a draw.

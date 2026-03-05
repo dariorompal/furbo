@@ -1,0 +1,16 @@
+models:
+  - name: stg_equipos
+    columns:
+      - name: equipo_id
+        tests:
+          - unique
+          - not_null
+      - name: nombre
+        tests:
+          - not_null
+      - name: estadio
+        tests:
+          - not_null
+      - name: ciudad
+        tests:
+          - not_null

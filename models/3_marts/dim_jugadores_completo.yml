@@ -1,0 +1,25 @@
+models:
+  - name: dim_jugadores_completo
+    columns:
+      - name: jugador_id
+        tests:
+          - unique
+          - not_null
+      - name: nombre
+        tests:
+          - not_null
+      - name: posicion
+        tests:
+          - not_null
+      - name: equipo_id
+        tests:
+          - not_null
+      - name: estado_disponibilidad
+        tests:
+          - not_null
+      - name: goles_totales
+        tests:
+          - not_null
+      - name: impacto_puntos
+        tests:
+          - not_null

@@ -1,0 +1,16 @@
+models:
+  - name: stg_eventos_goles
+    columns:
+      - name: gol_id
+        tests:
+          - unique
+          - not_null
+      - name: partido_id
+        tests:
+          - not_null
+      - name: jugador_id
+        tests:
+          - not_null
+      - name: minuto
+        tests:
+          - not_null
