@@ -1,0 +1,26 @@
+models:
+- name: int_puntos_por_partido
+  description: This model calculates the points earned by each team in a match, considering
+    both home and away conditions. It unifies the data from local and visiting teams
+    to provide a comprehensive view of match outcomes.
+  columns:
+  - name: partido_id
+    description: Unique identifier for each match.
+  - name: fecha
+    description: The date when the match took place.
+  - name: equipo_id
+    description: Identifier for the team, either home or away.
+  - name: equipo_local
+    description: Name of the home team.
+  - name: rival
+    description: Name of the opposing team.
+  - name: goles_a_favor
+    description: Number of goals scored by the team.
+  - name: goles_en_contra
+    description: Number of goals scored against the team.
+  - name: condicion
+    description: Indicates whether the team was playing at home ('Local') or away
+      ('Visitante').
+  - name: puntos
+    description: 'Points earned by the team based on match outcome: 3 for a win, 1
+      for a draw, 0 for a loss.'

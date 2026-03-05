@@ -1,0 +1,17 @@
+models:
+- name: int_goleadores_por_partido
+  description: This model provides detailed information about goals scored in matches,
+    including the player who scored, their position, and the minute the goal was scored.
+    It combines data from goals and players to offer insights into player performance
+    during matches.
+  columns:
+  - name: gol_id
+    description: A unique identifier for each goal scored in a match.
+  - name: partido_id
+    description: A unique identifier for each match.
+  - name: nombre
+    description: The name of the player who scored the goal.
+  - name: posicion
+    description: The position of the player on the field when the goal was scored.
+  - name: minuto
+    description: The minute during the match when the goal was scored.
