@@ -8,8 +8,8 @@ unidos as (
     select
         p.partido_id,
         p.fecha,
-        el.equipo_id as equipo_local,
-        ev.equipo_id as equipo_visitante,
+        el.nombre as equipo_local,
+        ev.nombre as equipo_visitante,
         p.goles_local,
         p.goles_visitante,
         -- Lógica de resultado
