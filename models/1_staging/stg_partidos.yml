@@ -1,0 +1,22 @@
+models:
+  - name: stg_partidos
+    columns:
+      - name: partido_id
+        tests:
+          - unique
+          - not_null
+      - name: fecha
+        tests:
+          - not_null
+      - name: equipo_local_id
+        tests:
+          - not_null
+      - name: equipo_visitante_id
+        tests:
+          - not_null
+      - name: goles_local
+        tests:
+          - not_null
+      - name: goles_visitante
+        tests:
+          - not_null

@@ -1,0 +1,16 @@
+models:
+  - name: stg_jugadores
+    columns:
+      - name: jugador_id
+        tests:
+          - unique
+          - not_null
+      - name: nombre
+        tests:
+          - not_null
+      - name: posicion
+        tests:
+          - not_null
+      - name: equipo_id
+        tests:
+          - not_null
