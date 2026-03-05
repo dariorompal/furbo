@@ -10,5 +10,13 @@ sources:
       - name: eventos_goles
       - name: jugadores
       - name: lesiones
+        freshness: 
+          error_after:
+            count: 1
+            period: day
+          warn_after:
+            count: 22
+            period: hour
+        
       - name: partidos
       - name: vista_racha_equipos
